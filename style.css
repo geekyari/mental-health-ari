@@ -476,9 +476,9 @@ header .logo span{
 }
 
 
-@media (max-width:380px){
+@media (max-width:382px){
     .home{
-        margin-top: -18rem;
+        margin-top: -7rem;
         margin-bottom: -10rem;
     }
 
