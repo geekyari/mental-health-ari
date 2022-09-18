@@ -347,36 +347,15 @@ header .logo span{
     html{
         font-size: 55%;
     }
-
-    .home{
-        margin-top: 0rem;
-    }
-}
-
-@media (max-width:820px){
-    .home{
-        flex-flow: column;
-        margin-top: -20rem;
-    }
 }
 
 
-@media (max-width:767px){
-    .home{
-        flex-flow: column;
-        margin-top: -20rem;
-    }
 
-    .home .image img{
-        width: 100%;
-    }
+@media (max-width:768px){
+
 
     .home .content p{
         font-size: 1.5rem;
-    }
-
-    .home{
-        margin-top: -.5rem;
     }
 
     .container-parent{
@@ -390,22 +369,30 @@ header .logo span{
 }
 
 
-@media (max-width:490px){
+@media (max-width:530px){
     html{
         font-size: 50%
     }
 
     .home{
-        margin-top: -15rem;
+        flex-flow: column;
+        margin-top: -5rem;
     }
 
     .home .image img{
-        margin-top: 20rem;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
     }
 
     .tips .box-container .box{
-        width: 90%;
+        width: 60%;
         height: 330px;
+    }
+
+    .tips .box-container img{
+        width: 80%;
     }
 
     .container-parent{
@@ -414,7 +401,7 @@ header .logo span{
 
     .container-parent label{
         font-size: 12px;
-        padding-bottom: 1rem;
+        padding-bottom: 2rem;
     }
 
     .footer .box-container .box{
@@ -425,18 +412,21 @@ header .logo span{
 
 }
 
-@media (max-width:420px){
+@media (max-width:450px){
     html{
         font-size: 50%
     }
 
     .home{
-        margin-top: -15rem;
+        margin-top: -6rem;
+        background-size: cover;
+        background-position: center;
     }
 
     .home .image img{
-        margin-top: 20rem;
+        padding-top: 6rem;
     }
+
 
     .box-container{
         text-align: center;
@@ -465,22 +455,24 @@ header .logo span{
 }
 
 
-@media (max-width:380px){
+@media (max-width:400px){
     .home{
-        margin-top: -18rem;
-        margin-bottom: -10rem;
+        margin-top: -15rem;
+        background-size: cover;
+        background-position: center;
     }
 
     .home .image img{
-        margin-top: 15rem;
+        padding-top: 8rem;
     }
 
+
     .home .content h3{
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
     .home .content h3 span{
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
     .container-parent{
@@ -492,4 +484,12 @@ header .logo span{
         padding-bottom: 2rem;
     }
 
+}
+
+@media (max-width:340px){
+    .home{
+        margin-top: -15rem;
+        background-size: cover;
+        background-position: center;
+    }
 }
