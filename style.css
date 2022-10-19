@@ -582,15 +582,16 @@ transform: rotate(45deg);
 
     .home .image img{
         padding-top: 8rem;
+        padding-bottom: 5rem;
     }
 
 
-    .home .content h3{
-        font-size: 3rem;
+    .home .content h1{
+        font-size: 4rem;
     }
 
-    .home .content h3 span{
-        font-size: 3rem;
+    .home .content h1 span{
+        font-size: 4rem;
     }
 
     .container-parent{
@@ -611,8 +612,12 @@ transform: rotate(45deg);
         background-size: cover;
         background-position: center;
     }
+<<<<<<< HEAD
 
     .illness .table-container .styled-table{
         width: 100%;
     }
 }
+=======
+}
+>>>>>>> 94397f7b7803966da301208fe77422ff6fc8379a
