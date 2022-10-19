@@ -165,6 +165,7 @@ header .logo span{
     padding-top: 1rem 0;
     text-transform: none;
     text-align: center;
+    line-height: 1.6;
 }
 
 .container-parent{
@@ -203,51 +204,101 @@ header .logo span{
     width: 0;
   }
   
-  /* Create a custom checkbox */
-  .checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: var(--green);
-  }
-  
-  /* On mouse-over, add a grey background color */
-  .container:hover input ~ .checkmark {
-    background-color: var(--green);
-  }
-  
-  /* When the checkbox is checked, add a blue background */
-  .container input:checked ~ .checkmark {
-    background-color: var(--green);
-  }
-  
-  /* Create the checkmark/indicator (hidden when not checked) */
-  .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-  }
-  
-  /* Show the checkmark when checked */
-  .container input:checked ~ .checkmark:after {
-    display: block;
-  }
-  
-  /* Style the checkmark/indicator */
-  .container .checkmark:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
+/* Create a custom checkbox */
+.checkmark {
+position: absolute;
+top: 0;
+left: 0;
+height: 25px;
+width: 25px;
+background-color: var(--green);
+}
 
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+background-color: var(--green);
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+background-color: var(--green);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+content: "";
+position: absolute;
+display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+left: 9px;
+top: 5px;
+width: 5px;
+height: 10px;
+border: solid white;
+border-width: 0 3px 3px 0;
+-webkit-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+
+.table-container img{
+    width: 2in;
+    height: 1.7in;
+}
+
+.styled-table{
+    border-collapse: collapse;
+    min-width: 400px;
+    box-shadow: 0 0  20px rgba(0, 0, 0, 0.15);
+    text-transform: none;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+.styled-table p{
+    text-transform: none;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.styled-table h3{
+    color: var(--green);
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.styled-table thead tr{
+    background-color: #6385dc;
+    color: #ffffff;
+    text-align-last: center;
+}
+
+.styled-table th, .styled-table td{
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr{
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-last-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #6385dc;
+}
 
 .footer{
     margin-top: 10rem;
@@ -366,6 +417,18 @@ header .logo span{
         font-size: 15px;
     }
 
+    .illness .table-container .styled-table{
+        min-width: 0;
+        width: 95%;
+    }
+
+    .illness .table-container .styled-table img{
+        width: 1.3in;
+        height: 1.3in;
+    }
+
+
+
 }
 
 
@@ -404,10 +467,37 @@ header .logo span{
         padding-bottom: 2rem;
     }
 
+    .illness .table-container .styled-table{
+        min-width: 0;
+        width: 95%;
+        table-layout: fixed;
+    }
+
+    .illness .table-container .styled-table p{
+        font-size: 1.2rem;
+        line-height: 1.3;
+    }
+
+    .illness .table-container .styled-table h3{
+        font-size: 1.2rem;
+    }
+
+
+    .illness .table-container .styled-table img{
+        width: 1in;
+        height: 1in;
+    }
+
+    .illness .table-container .styled-table .def{
+        width: 40%;
+    }
+
     .footer .box-container .box{
         margin: 1rem;
         padding: 0rem;
     }
+
+    
 
 
 }
@@ -452,7 +542,35 @@ header .logo span{
         padding-bottom: 2rem;
     }
 
-}
+    .illness .table-container .styled-table{
+        min-width: 0;
+        width: 95%;
+        table-layout: fixed;
+    }
+
+    .illness .table-container .styled-table p{
+        font-size: 1.1rem;
+    }
+
+    .illness .table-container .styled-table h3{
+        font-size: 1.2rem;
+    }
+
+
+    .illness .table-container .styled-table img{
+        width: .9in;
+        height: .9in;
+    }
+
+    .illness .table-container .styled-table .def{
+        width: 40%;
+    }
+
+    .illness .table-container .styled-table .type{
+        width: 25%;
+    }
+
+
 
 
 @media (max-width:400px){
@@ -484,6 +602,7 @@ header .logo span{
         padding-bottom: 2rem;
     }
 
+
 }
 
 @media (max-width:340px){
@@ -491,5 +610,9 @@ header .logo span{
         margin-top: -15rem;
         background-size: cover;
         background-position: center;
+    }
+
+    .illness .table-container .styled-table{
+        width: 100%;
     }
 }
