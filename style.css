@@ -206,47 +206,51 @@ header .logo span{
   
 /* Create a custom checkbox */
 .checkmark {
-position: absolute;
-top: 0;
-left: 0;
-height: 25px;
-width: 25px;
-background-color: var(--green);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: var(--green);
 }
 
 /* On mouse-over, add a grey background color */
 .container:hover input ~ .checkmark {
-background-color: var(--green);
+    background-color: var(--green);
 }
 
 /* When the checkbox is checked, add a blue background */
 .container input:checked ~ .checkmark {
-background-color: var(--green);
+    background-color: var(--green);
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
-content: "";
-position: absolute;
-display: none;
+    content: "";
+    position: absolute;
+    display: none;
 }
 
 /* Show the checkmark when checked */
 .container input:checked ~ .checkmark:after {
-display: block;
+    display: block;
 }
 
 /* Style the checkmark/indicator */
 .container .checkmark:after {
-left: 9px;
-top: 5px;
-width: 5px;
-height: 10px;
-border: solid white;
-border-width: 0 3px 3px 0;
--webkit-transform: rotate(45deg);
--ms-transform: rotate(45deg);
-transform: rotate(45deg);
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.illness{
+    margin-top: -20rem;
 }
 
 .table-container img{
@@ -427,8 +431,6 @@ transform: rotate(45deg);
         height: 1.3in;
     }
 
-
-
 }
 
 
@@ -492,10 +494,16 @@ transform: rotate(45deg);
         width: 40%;
     }
 
+    .illness{
+        margin-top: -50rem;    
+    }
+
+
     .footer .box-container .box{
         margin: 1rem;
         padding: 0rem;
     }
+
 
     
 
@@ -570,6 +578,9 @@ transform: rotate(45deg);
         width: 25%;
     }
 
+    .illness{
+        margin-top: -35rem;    
+    }
 
 
 
@@ -603,8 +614,14 @@ transform: rotate(45deg);
         padding-bottom: 2rem;
     }
 
+    .illness{
+        margin-top: -35rem;    
+    }
+
+
 
 }
+
 
 @media (max-width:340px){
     .home{
@@ -612,12 +629,8 @@ transform: rotate(45deg);
         background-size: cover;
         background-position: center;
     }
-<<<<<<< HEAD
 
-    .illness .table-container .styled-table{
-        width: 100%;
-    }
 }
-=======
-}
->>>>>>> 94397f7b7803966da301208fe77422ff6fc8379a
+
+
+
