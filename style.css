@@ -304,6 +304,40 @@ header .logo span{
     border-bottom: 2px solid #6385dc;
 }
 
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+  
+
+.formContainer {
+    width: 50%;
+    margin-left: auto; margin-right: auto;
+    padding: 30px;
+    border-radius: 1rem;
+    border: .4rem solid var(--green);
+    margin-top: 2rem;
+}
+
+.pledge{
+    text-transform: none;
+    line-height: 2rem;
+    margin-bottom: 2.5rem;
+    font-size: 1.5rem;
+    font-style: italic;
+    text-align: justify;
+}
+
+.formContainer label{
+    font-size: 1.6rem;
+}
+
 .footer{
     margin-top: 10rem;
     padding-top: 3rem;
@@ -498,6 +532,10 @@ header .logo span{
         margin-top: -50rem;    
     }
 
+    .formContainer {
+        width: 90%;
+    }
+
 
     .footer .box-container .box{
         margin: 1rem;
@@ -581,6 +619,21 @@ header .logo span{
     .illness{
         margin-top: -35rem;    
     }
+
+    .pledge{
+        font-size: 1.2rem;
+    }
+    
+    .formContainer label{
+        font-size: 1.3rem;
+    }
+
+    input[type=text], select, textarea {
+        padding: 8px;
+        font-size: 1rem;
+    }
+}
+
 
 
 
